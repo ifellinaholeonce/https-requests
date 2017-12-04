@@ -1,6 +1,5 @@
-var https = require('https');
-
-function getAndPrintHTMLChunks () {
+var getAndPrintHTMLChunks = function () {
+  var https = require('https');
 
   var requestOptions = {
     host: 'sytranis.github.io',
@@ -13,6 +12,6 @@ function getAndPrintHTMLChunks () {
       console.log(data + '---------------------- \n');
     });
   });
-}
+};
 
 getAndPrintHTMLChunks();
