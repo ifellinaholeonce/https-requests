@@ -16,14 +16,11 @@ var getHTML = function (options, callback) {
 };
 
 
-
-var requestOptions = {
-  host: 'sytranis.github.io',
-  path: '/http-examples/step1.html'
-};
-
 var printHTML = function (html) {
   console.log(html);
 };
 
-getHTML(requestOptions, printHTML);
+module.exports = {
+  getHTML: getHTML,
+  printHTML: printHTML
+};
